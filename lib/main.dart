@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Count it'),
       routes: {
         '/home': (context) => const MyHomePage(title: 'Count it'),
-        '/firebase_content': (context) => const MyFireBasePage(title: 'Page 2'),
+        '/firebase_page': (context) =>
+            const MyFireBasePage(title: 'Firebase_Page'),
         '/amawulire': (context) => const Amawulire(title: 'Amawulire'),
       },
     );

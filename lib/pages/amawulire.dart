@@ -21,7 +21,8 @@ class _AmawulireState extends State<Amawulire> {
       ),
       body: const Center(
         child: Text(
-          'Here is another page awaiting content!',
+          'Here is a page with some Amawulire content',
+          textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20),
         ),
       ),

@@ -31,11 +31,11 @@ class MyDrawer extends StatelessWidget {
         ),
         ListTile(
           leading: Icon(Icons.ballot, size: 30, color: Colors.grey[700]),
-          title:
-              const Text('Page 2', style: TextStyle(fontSize: drawerFontSize)),
+          title: const Text('Firebase_Page',
+              style: TextStyle(fontSize: drawerFontSize)),
           onTap: () {
             Navigator.pop(context);
-            Navigator.pushReplacementNamed(context, '/firebase content');
+            Navigator.pushReplacementNamed(context, '/firebase_page');
           },
         ),
         ListTile(

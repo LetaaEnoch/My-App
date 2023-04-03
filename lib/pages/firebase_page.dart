@@ -21,7 +21,8 @@ class _MyFireBasePageState extends State<MyFireBasePage> {
       ),
       body: const Center(
         child: Text(
-          'This is a firebase page. I\'ll put some firebase content here',
+          'This is a firebase page. I will put some firebase content here',
+          textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20),
         ),
       ),
