@@ -47,6 +47,15 @@ class MyDrawer extends StatelessWidget {
             Navigator.pushReplacementNamed(context, '/amawulire');
           },
         ),
+        ListTile(
+          leading: Icon(Icons.sunny, size: 30, color: Colors.grey[700]),
+          title:
+              const Text('Weather', style: TextStyle(fontSize: drawerFontSize)),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.pushReplacementNamed(context, '/weather');
+          },
+        ),
       ]),
     );
   }
