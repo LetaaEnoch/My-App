@@ -3,6 +3,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'pages/home_page.dart';
 import 'pages/firebase_page.dart';
 import 'pages/amawulire.dart';
+import 'pages/weather_page.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/firebase_page': (context) =>
             const MyFireBasePage(title: 'Firebase_Page'),
         '/amawulire': (context) => const Amawulire(title: 'Amawulire'),
+        '/weather': (context) => const MyWeatherPage(title: 'Weather Detail')
       },
     );
   }
