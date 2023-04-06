@@ -3,10 +3,18 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'pages/home_page.dart';
 import 'pages/firebase_page.dart';
 import 'pages/amawulire.dart';
+import 'pages/weather_page.dart';
+import 'package:firebase_core/firebase_core.dart';
+import '../firebase_options.dart';
 
-void main() {
+void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  // ...
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -27,8 +35,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => const MyHomePage(title: 'Count it'),
         '/firebase_page': (context) =>
-            const MyFireBasePage(title: 'Firebase_Page'),
+            const MyFireBasePage(title: 'Firebase Page'),
         '/amawulire': (context) => const Amawulire(title: 'Amawulire'),
+        '/weather': (context) => const MyWeatherPage(title: 'Weather Detail')
       },
     );
   }
